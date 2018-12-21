@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
     <title>nevroje</title>
-<script>function startTime() {
+<script>
+  function startTime() {
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
@@ -21,7 +22,8 @@ function checkTime(i) {
 }
 </script>
   </head>
-  <body>
+  <body onload="startTime()">
+    <div id="txt"></div>
     <nav>
       <ul>
           <li><a href="index.html"> Home </a></li>
